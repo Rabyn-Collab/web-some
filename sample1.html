@@ -73,7 +73,33 @@
         top: 350px;
         left: 500px;
       } */
+
+      table {
+        margin: 20px 20px;
+        border-collapse: collapse;
+      }
+
+      .tab th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      th {
+        background-color: tan;
+      }
+
+      tr:nth-child(even) {
+        background-color: rgb(223, 212, 212);
+      }
+
+
+      tr:hover {
+        background-color: salmon;
+        cursor: pointer;
+      }
     </style>
+
   </head>
 
   <body>
@@ -81,7 +107,36 @@
 
 
 
+    <table class="tab">
+      <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
 
+      <tr>
+        <td>Math</td>
+        <td>90%</td>
+      </tr>
+
+      <tr>
+        <td>Science</td>
+        <td>90%</td>
+      </tr>
+      <tr>
+        <td>History</td>
+        <td>90%</td>
+      </tr>
+      <tr>
+        <td>Account</td>
+        <td>90%</td>
+      </tr>
+
+      <!-- <tr>
+        <td>Total</td>
+        <td colspan="2">90%</td>
+      </tr> -->
+
+    </table>
 
 
 
