@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+      :root {
+        --main-color: #FF80FF;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas:
+          "header header"
+          "section1 side"
+          "section2 side"
+          "section3 side"
+          "footer footer";
+      }
+
+      .navbar {
+        grid-area: header;
+        background-color: var(--main-color);
+      }
+
+      .sidebar {
+        grid-area: side;
+      }
+
+      .section1 {
+        grid-area: section1;
+      }
+
+      .section2 {
+        grid-area: section2;
+      }
+
+      .section3 {
+        grid-area: section3;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <div class="navbar">
+
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item">HOME</li>
+            <li class="nav-item">OUR TEAM</li>
+            <li class="nav-item">PROJECTS</li>
+            <li class="nav-item">CONTACT</li>
+          </ul>
+        </div>
+        <div class="search">
+          <form action="">
+            <input type="text">
+            <button>Go</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- navbar end -->
+
+      <div class="section1">
+        <h1>Article heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reiciendis minima culpa eos commodi
+          voluptatibus soluta temporibus quod labore obcaecati!</p>
+      </div>
+
+      <!-- section1 end -->
+
+      <div class="sidebar">
+        <h1>Related</h1>
+        <ul>
+          <li>Sample1</li>
+          <li>Sample2</li>
+          <li>Sample3</li>
+          <li>Sample4</li>
+        </ul>
+      </div>
+
+      <!-- sidebar end -->
+
+      <div class="section2">
+        <h2>subsection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem accusantium recusandae, quaerat iste
+          libero enim sunt sit qui illum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem accusantium recusandae, quaerat iste
+          libero enim sunt sit qui illum!</p>
+      </div>
+
+      <!-- section2 end -->
+
+      <div class="section3">
+        <h2>subsection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem accusantium recusandae, quaerat iste
+          libero enim sunt sit qui illum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem accusantium recusandae, quaerat iste
+          libero enim sunt sit qui illum!</p>
+      </div>
+
+      <!-- section3 -->
+
+      <footer>
+        <p>(c)CopyRights 2050. All Rights reserved</p>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
