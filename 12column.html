@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #F5F5F5;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+      }
+
+      .feature img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .header {
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .title {
+        grid-column: span 6;
+      }
+
+      .menu {
+        grid-column: span 6;
+        justify-self: end;
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: rgb(77, 66, 66);
+        margin-left: 10px;
+      }
+
+      .main {
+        padding: 20px 20px;
+      }
+
+      .f-image img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .f-image {
+        grid-column: span 5;
+      }
+
+      .info {
+        grid-column: span 7;
+      }
+
+      .article {
+        padding: 10px;
+        grid-column: span 4;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+
+      /* .box {
+        height: 200px;
+        margin: 20px;
+        width: 200px;
+        background-color: aquamarine;
+        box-shadow: -2px -2px 5px black;
+      } */
+    </style>
+  </head>
+
+  <body>
+
+    <!-- <div class="box">
+      box shadow
+    </div> -->
+
+    <div class="header grid">
+      <div class="title">
+        <h2>Sample Grid</h2>
+      </div>
+      <div class="menu">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+      </div>
+    </div>
+
+
+    <div class="main grid">
+      <div class="f-image">
+        <img
+          src="https://images.unsplash.com/photo-1668796329943-0278bfa15353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+
+      <div class="info">
+        <h2>Sample Grid 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laborum commodi minima ratione
+          delectus ullam quia quidem recusandae vitae quod harum doloribus quo tempora error porro impedit, accusamus
+          reprehenderit, aliquam esse dolores! Eum perferendis rerum, eos sequi sed dolorum enim earum vel incidunt ut
+          vitae provident quae repudiandae veniam praesentium?</p>
+      </div>
+
+
+
+      <div class="article">
+        <h2>Sample Grid1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore asperiores sapiente dicta minima numquam
+          omnis cum officiis adipisci dolorem porro sint nihil, consectetur voluptas vel quod molestiae, sed aliquam
+          natus expedita animi rem? Accusamus id unde corrupti facere eveniet deserunt, asperiores molestias quos quae
+          distinctio accusantium pariatur. Velit, officiis alias.</p>
+      </div>
+
+
+      <div class="article">
+        <h2>Sample Grid2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore asperiores sapiente dicta minima numquam
+          omnis cum officiis adipisci dolorem porro sint nihil, consectetur voluptas vel quod molestiae, sed aliquam
+          natus expedita animi rem? Accusamus id unde corrupti facere eveniet deserunt, asperiores molestias quos quae
+          distinctio accusantium pariatur. Velit, officiis alias.</p>
+      </div>
+
+
+
+      <div class="article">
+        <h2>Sample Grid3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore asperiores sapiente dicta minima numquam
+          omnis cum officiis adipisci dolorem porro sint nihil, consectetur voluptas vel quod molestiae, sed aliquam
+          natus expedita animi rem? Accusamus id unde corrupti facere eveniet deserunt, asperiores molestias quos quae
+          distinctio accusantium pariatur. Velit, officiis alias.</p>
+      </div>
+
+
+
+
+    </div>
+
+
+  </body>
+
+</html>
