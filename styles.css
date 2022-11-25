@@ -90,3 +90,50 @@ form button {
 .course p {
   text-align: justify;
 }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 10px;
+}
+
+.card {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .detail {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 7px;
+}
+
+.card img {
+  width: 100%;
+  clip-path: circle();
+  object-fit: cover;
+}
+
+.card .text {
+  padding: 0 12px;
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+}
