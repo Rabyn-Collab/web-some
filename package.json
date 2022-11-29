@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Rabyn-Collab/web-some/issues"
   },
-  "homepage": "https://github.com/Rabyn-Collab/web-some#readme"
+  "homepage": "https://github.com/Rabyn-Collab/web-some#readme",
+  "dependencies": {
+    "axios": "^1.2.0"
+  }
 }

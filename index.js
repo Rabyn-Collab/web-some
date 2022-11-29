@@ -1,78 +1,86 @@
-
-
-/*
-multiline comment
-*/
-
-
-// single line comment
-
-//string
-let userName = 'ram hari';
-console.log(userName.length);
-console.log(userName.toLocaleUpperCase());
-console.log(userName.replace('ram', 'sita'));
-console.log(userName.trim());
-console.log(userName.substring(0, 2));
-console.log(userName.includes('m'));
-console.log(userName.slice(1, 2));
-
-//number
 const a = 90;
-const b = 100.100;
-console.log(a.toString());
-console.log(typeof (a)); //check type
-console.log(b.toFixed(2));
 
+const b = 100;
 
-//boolean
-const isLogin = true;
-const isRegister = false;
+// console.log(a > b || a < b || a === b);
+// console.log(a < b && a === 90 && a !== b);
 
-//Undefined
-let un;
-let c = undefined;
+// let isTrue = a > b ? 'true' : 'false';
+// console.log(isTrue);
 
-//null
-let imageFile = null;
+let age = 19;
 
-//Array
-const colors = ['white', 'green', 'blue'];
-const numbers = [22, 55, 77, 99];
-
-//object
-const person = {
-  'name': 'sam',
-  'age': 90,
-  'job': 'banker'
-};
-
-//function
-function greet() {
-  console.log('hello world');
+if (age < 20) {
+  console.log('junior ticket $10');
+} else if (age > 20 && age < 50) {
+  console.log('regular ticket $20');
+} else {
+  console.log('senior ticket $10');
 }
 
-const greet1 = () => {
-  console.log('namaste world');
+// let i = 0;
+
+// while (i < 20) {
+//   i++;
+//   console.log(i);
+// }
+
+const c = 'some';
+const d = 'hello';
+const id = 90;
+
+// concat 
+
+// const updateApi = 'http://baseUrl/updateProduct'
+// const t = c + d + id;
+
+// const url = `${updateApi}/${id}`;
+// console.log(url);
+
+const age1 = 90;
+
+const m = 'lio';
+console.log(`${m.toLocaleUpperCase()}`);
+
+for (let i = 1; i < 20; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log('fizz buzz');
+  } else if (i % 3 == 0) {
+    console.log('fizz');
+  } else if (i % 5 == 0) {
+    console.log('buzz');
+  } else {
+    console.log(i);
+  }
 }
 
+const medalType = 2;
 
-//arthimetic operators
-let x = 90;
-let y = 100;
-x++;
-x--;
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
-console.log(x / y);
-console.log(x % y);
+switch (medalType) {
+  case 1:
+    console.log('gold medal');
+    break;
+  case 2:
+    console.log('silvermedal');
+    break;
+  case 3:
+    console.log('bronze medal');
+    break;
+  default:
+    console.log('no medal');
+}
+
+const numbers = [22, 55, 77, 99, 100];
 
 
-//comparison operator
-console.log(x > y);
-console.log(x < y);
-console.log(x >= y);
-console.log(x <= y);
-console.log(x === y);
-console.log(x !== y);
+for (let n in numbers) {
+  console.log(n);
+}
+let total = 0;
+
+for (let n of numbers) {
+  total = total + n;
+}
+
+console.log(total);
+
