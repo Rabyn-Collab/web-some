@@ -48,11 +48,11 @@ const person = {
 };
 
 //function
-function greet() {
+function greetY() {
   console.log('hello world');
 }
 
-const greet1 = () => {
+const greetM = () => {
   console.log('namaste world');
 }
 
@@ -76,3 +76,155 @@ console.log(x >= y);
 console.log(x <= y);
 console.log(x === y);
 console.log(x !== y);
+
+const f = 90;
+
+const g = 100;
+
+console.log(f > g || f < g || f === g);
+console.log(f < g && f === 90 && f !== g);
+
+// terninary operator
+
+let isTrue = f > g ? 'true' : 'false';
+console.log(isTrue);
+
+let age = 19;
+
+if (age < 20) {
+  console.log('junior ticket $10');
+} else if (age > 20 && age < 50) {
+  console.log('regular ticket $20');
+} else {
+  console.log('senior ticket $10');
+}
+
+
+
+let i = 0;
+// while loop
+while (i < 20) {
+  i++;
+  console.log(i);
+}
+
+
+// template String
+
+const updateApi = 'http://baseUrl/updateProduct'
+
+const url = `${updateApi}/${id}`;
+
+
+// const age1 = 90;
+// const m = 'lio';
+// console.log(`${m.toLocaleUpperCase()}`);
+
+// for loop
+for (let i = 1; i < 20; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log('fizz buzz');
+  } else if (i % 3 == 0) {
+    console.log('fizz');
+  } else if (i % 5 == 0) {
+    console.log('buzz');
+  } else {
+    console.log(i);
+  }
+}
+
+// switch case
+const medalType = 2;
+
+switch (medalType) {
+  case 1:
+    console.log('gold medal');
+    break;
+  case 2:
+    console.log('silvermedal');
+    break;
+  case 3:
+    console.log('bronze medal');
+    break;
+  default:
+    console.log('no medal');
+}
+
+const numbers1 = [22, 55, 77, 99, 100];
+
+
+for (let n in numbers1) {
+  console.log(n);
+}
+let total = 0;
+
+for (let n of numbers1) {
+  total = total + n;
+}
+
+
+
+
+
+
+// functions
+function greet() {
+  console.log('hello world');
+}
+
+
+// return functions
+const greet1 = (name, age, greetType) => {
+  const some = 95;
+  return `${name} ${greetType} ${age} ${some}`;
+}
+
+
+const numbersV = [22, 77, 99, 100];
+let sumTotal = 0;
+for (let n of numbersV) {
+  sumTotal = sumTotal + n;
+
+}
+console.log(sumTotal);
+
+
+
+const person1 = {
+  name: 'Ram',
+  age: 90,
+  job: 'dev',
+  read: function () {
+    console.log(`${this.age} is reading1`);
+  }
+};
+person.read();
+
+
+const personData = [
+  {
+    name: 'Avatar',
+    rating: 9.5,
+    detail: 'al;kd;lsakdl;sakdl;sakd',
+    cast: ['ram', 'hari']
+  },
+  {
+    name: 'U2',
+    rating: 7.5,
+    detail: 'al;kd;lsakdl;sakdl;sakd',
+    cast: ['ram', 'hari']
+  },
+];
+
+
+
+const random = Math.random();
+// console.log(random * 20);
+const r1 = Math.floor(random);
+console.log(r1);
+
+const date = new Date();
+console.log(date.getFullYear());
+
+
+
