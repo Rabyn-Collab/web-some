@@ -228,3 +228,33 @@ console.log(date.getFullYear());
 
 
 
+setTimeout(() => {
+  console.log('hello world');
+}, 3000);
+
+
+setInterval(() => {
+  const date = new Date();
+  console.log(`${date.getHours()} ${date.getMinutes()} ${date.getSeconds()}`);
+}, 1000)
+
+
+
+
+
+let total1 = 0;
+const numbers2 = [22, 55, 77, 99];
+
+numbers2.forEach((n) => {
+  total = total + n;
+});
+console.log(total);
+// numbers.push(90);
+const isThere = numbers2.includes(90);
+// numbers.pop();
+// numbers.shift()
+const m = numbers2.slice(2, 4);
+
+// console.log(isThere);
+// console.log(numbers);
+// console.log(m);
